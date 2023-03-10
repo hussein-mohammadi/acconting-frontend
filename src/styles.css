@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+    direction: rtl;
+    text-align: start;
+}
+body {
+    font-family: YekanBakh;
+    background-color: #121317;
+    color: #fff;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+.sidenav {
+    border: none!important;
+}
+.sidenav-inner {
+    width: 300px;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-drawer-container {
+	background-color: transparent;
+	color: white;
+}
+
+.mat-drawer {
+	background-color: transparent;
+	color: white;
+}
+
+.sidenav-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.sidenav-header .app-logo {
+    margin-left: .75rem;
+}
+
+.sidenav-header .app-logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.sidenav-header .app-title h1 {
+    color: #F2BA40;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.app-menu {
+    padding: .75rem;
+    background-color: #191A1E;
+    border-radius: 25px;
+}
+
+.app-menu .nav-item {
+    margin-bottom: 0.75rem;
+}
+
+.app-menu .nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.app-menu .nav-link {
+    border-radius: 10px;
+    font-size: 14px;
+    padding: .75rem 1rem;
+    color: #78797D;
+    transition: all 3ms ease-in-out;
+}
+
+.app-menu .nav-link:hover,
+.app-menu .nav-link.active {
+    color: #EDEAF6;
+    background-color: #212226;
+    transition: all 3ms ease-in-out;
+}
+
+.app-content {
+    min-height: 100vh;
+    padding: 1.5rem;
+}
