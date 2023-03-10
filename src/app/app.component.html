@@ -9,30 +9,55 @@
                     <h1>{{ title }}</h1>
                 </div>
             </div>
-            <div class="app-menu">
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link"
-                      [routerLink]="['/']"
-                      routerLinkActive="active"
-                      [routerLinkActiveOptions]="{exact:true}">
-                      پیشخوان
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" [routerLink]="['income']" routerLinkActive="active">درآمدها</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" [routerLink]="['cost']" routerLinkActive="active">مخارج</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled">آمار و گزارشات</a>
-                    </li>
-                  </ul>
+            <div class="flex-grow-1">
+                <div class="app-menu">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                [routerLink]="['/']"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact:true}">
+                                پیشخوان
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['income']" routerLinkActive="active">درآمدها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['cost']" routerLinkActive="active">مخارج</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">آمار و گزارشات</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="set-income-menu">
+                    <div class="p-2">
+                        <h5>درآمد جدید دارید؟</h5>
+                        <p>با ثبت به موقع و دقیق درآمدها به ما در محاسبات کمک کنید.</p>
+                    </div>
+                    <a class="btn btn-primary d-block" [routerLink]="['income','create']">ثبت درآمد</a>
+                </div>
+                <div class="setting-menu">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['employee']" routerLinkActive="active">کارمندان</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['setting']" routerLinkActive="active">تنظیمات</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </mat-sidenav>
     <mat-sidenav-content class="app-content">
+        <div class="content-title">
+            <h3>{{ pageTitle }}</h3>
+        </div>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
